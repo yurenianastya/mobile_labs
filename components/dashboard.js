@@ -29,7 +29,11 @@ export default class Dashboard extends Component {
                 <Text style = {styles.textStyle}>
                     Hello, {this.state.displayName}
                 </Text>
-
+                <Button
+                    color="#000"
+                    title="Add calendar event"
+                    onPress={() => this.props.navigation.navigate('Calendar')}
+                />
                 <Button
                     color="#000"
                     title="Logout"

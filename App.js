@@ -7,6 +7,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Login from './components/login';
 import Signup from './components/signup';
 import Dashboard from './components/dashboard';
+import Calendar from './components/calendar';
 
 const Stack = createStackNavigator();
 
@@ -45,6 +46,13 @@ function MyStack() {
                 {headerLeft: null}
                 }
             />
+            <Stack.Screen
+                name={"Calendar"}
+                component={Calendar}
+                options={
+                    {title: 'Calendar'},
+                {headerLeft: null}
+                } />
         </Stack.Navigator>
     );
 }
